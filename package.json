@@ -1,0 +1,16 @@
+{
+  "name": "counter-app",
+  "version": "1.0.0",
+  "description": "A simple counter app with Cypress E2E tests",
+  "scripts": {
+    "start": "npx http-server -p 3000",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:e2e": "npm run start & npx wait-on http://localhost:3000 && npm run cypress:run"
+  },
+  "devDependencies": {
+    "cypress": "^14.2.1",
+    "http-server": "^14.1.1",
+    "wait-on": "^7.2.0"
+  }
+}
