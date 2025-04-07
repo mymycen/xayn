@@ -7,5 +7,7 @@ A simple counter web app that displays only positive numbers and supports increm
 ## 🚀 How to Run Locally
 
 ### 1. Install dependencies
+
 ```bash
 npm install
+```
