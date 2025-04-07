@@ -20,12 +20,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Start local server
-        run: npx http-server -p 3000 &
+      - name: Start server
+        run: npx http-server ./public -p 3000 &
         env:
           CI: true
 
-      - name: Wait for app to be ready
+      - name: Wait for app
         run: npx wait-on http://localhost:3000
 
       - name: Run Cypress Tests
